@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextText2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="20dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/areaButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/nameButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="onButtonClicked"
+        android:text="MANAGER" />
+
+    <Button
+        android:id="@+id/nameButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="onButtonClicked2"
+        android:text="TENANT" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/areaButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:scaleX="1.5"
+        android:scaleY="1.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="266dp" />
+
+</RelativeLayout>
